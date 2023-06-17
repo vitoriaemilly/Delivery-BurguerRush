@@ -6,7 +6,9 @@
     <title>Burguer Rush</title>
     <link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/login.css">
-	<script src="../javascript/index.js"></script>
+	<script type="text/javascript" src="../js/estados.js"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/municipios.js"></script>
 
 </head>
 <body>
@@ -23,16 +25,53 @@
 
 <div class="container2" id="container2">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form action="../php/index.php">
 			<h1>Crie sua conta</h1>
 			<span></span>
-		    <input type="text" placeholder="Digite seu nome" required id="nome"/>
-			<input type="email" placeholder="Digite seu e-mail" required id="e-mail" />
+		    <input type="text" placeholder="Digite seu nome" required id="nome">
+			<input type="email" placeholder="Digite seu e-mail" required id="e-mail">
 			<input type="text" name="cpf" \
 			pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ id="cpf" placeholder="Digite seu cpf">
+			<!-- <input type="text" placeholder="Digite seu endereço" required id="endereco">
+			<input type="text" placeholder="Digite seu Bairro" required id="bairro">
+			<input type="number" placeholder="Digite seu numero" required id="numero">
+			<input type="text" placeholder="Digite seu complemento" required id="complemento">
+			<input type="text" placeholder="Digite seu " required id=""> -->
+			<select id="estado" onchange="buscaCidades(this.value)">
+				<option value="">Selecione o Estado</option>
+				<option value="AC">Acre</option>	
+				<option value="AL">Alagoas</option>
+				<option value="AP">Amapá</option>
+				<option value="AM">Amazonas</option>
+				<option value="BA">Bahia</option>
+				<option value="CE">Ceará</option>
+				<option value="ES">Espírito Santo</option>
+				<option value="GO">Goiás</option>
+				<option value="MA">Maranhão</option>
+				<option value="MT">Mato Grosso</option>
+				<option value="MS">Mato Grosso do Sul</option>
+				<option value="MG">Minas Gerais</option>
+				<option value="PA">Pará</option>
+				<option value="PB">Paraíba</option>
+				<option value="PR">Paraná</option>
+				<option value="PE">Pernambuco</option>
+				<option value="PI">Piauí</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="RN">Rio Grande do Norte</option>
+				<option value="RS">Rio Grande do Sul</option>
+				<option value="RO">Rondônia</option>
+				<option value="RR">Roraima</option>
+				<option value="SC">Santa Catarina	</option>
+				<option value="SP">São Paulo</option>
+				<option value="SE">Sergipe</option>
+				<option value="TO">Tocantins</option>
+			 </select>
+			 <br/>
+			 <select name ='cidade'id="cidade">
+			 </select>
 			
 			<input type="password" placeholder="Crie uma senha" />
-			<button>Cadastrar</button>
+			<button type="submit">Cadastrar</button>
 		</form>
 	</div>
 
