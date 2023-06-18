@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/login.css">
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<!-- <script type="text/javascript" src="../js/municipios.js"></script> -->
-	<!-- <script src="../js/cidadesPorEstado.js"></script> -->
+	<script src="js/cidadesPorEstado.js"></script>
 
 </head>
 <body>
@@ -33,38 +33,14 @@
 			<input type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ id="cpf" placeholder="Digite seu cpf" maxlength="14">
 			<input type="email" placeholder="Digite seu e-mail" required id="e-mail" name="email">
 			<input type="text" name="telefone" id="telefone" required id="telefone" placeholder="Digite seu telefone" maxlength="">
-			<select id="estado"  name="estado"> <!--onchange="buscarCidades(this.value)" -->
-				<option value="">Selecione o Estado</option>
-				<option value="AC">Acre</option>	
-				<option value="AL">Alagoas</option>
-				<option value="AP">Amapá</option>
-				<option value="AM">Amazonas</option>
-				<option value="BA">Bahia</option>
-				<option value="CE">Ceará</option>
-				<option value="ES">Espírito Santo</option>
-				<option value="GO">Goiás</option>
-				<option value="MA">Maranhão</option>
-				<option value="MT">Mato Grosso</option>
-				<option value="MS">Mato Grosso do Sul</option>
-				<option value="MG">Minas Gerais</option>
-				<option value="PA">Pará</option>
-				<option value="PB">Paraíba</option>
-				<option value="PR">Paraná</option>
-				<option value="PE">Pernambuco</option>
-				<option value="PI">Piauí</option>
-				<option value="RJ">Rio de Janeiro</option>
-				<option value="RN">Rio Grande do Norte</option>
-				<option value="RS">Rio Grande do Sul</option>
-				<option value="RO">Rondônia</option>
-				<option value="RR">Roraima</option>
-				<option value="SC">Santa Catarina	</option>
-				<option value="SP">São Paulo</option>
-				<option value="SE">Sergipe</option>
-				<option value="TO">Tocantins</option>
-			 </select>
-			 <br/>
-			 <select name ='cidade'id="cidade">
-			 </select>
+			<label for="estado">Estado:</label>
+  			<select id="estado" onchange="carregarCidades()">
+  			  <option value="">Selecione um estado</option>
+  			</select>
+  			<label for="cidade">Cidade:</label>
+  			<select id="cidade">
+  			  <option value="">Selecione um estado primeiro</option>
+  			</select>
 			 <input type="text" placeholder="Digite seu Bairro" required id="bairro" name="Bairro">
 			 <input type="text" placeholder="Digite seu CEP" required id="cep" name="cep">
 			 <input type="number" placeholder="Digite o Número da sua casa" required id="numero_cs" name="numero" >
@@ -116,6 +92,8 @@
 	signInButton.addEventListener('click', () => {
 		container.classList.remove("right-panel-active");
 	});
+
+
 </script>
 </body>
 </html>
