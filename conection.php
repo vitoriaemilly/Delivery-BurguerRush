@@ -5,10 +5,10 @@
     $password = '';
     $database = 'restaurante';
 
-    $conection = mysqli_connect($servername, $username, $password, $database);
+    $conn = mysqli_connect($servername, $username, $password, $database);
 
-    if (!$conection) {
+    if (!$conn) {
         die (mysqli_connect_error());
-    }
-    echo 'Conexão Realizada com Sucesso!';
+    };
+    
 ?>
