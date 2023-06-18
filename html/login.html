@@ -6,7 +6,6 @@
     <title>Burguer Rush</title>
     <link rel="stylesheet" href="../css/style.css">
 	<link rel="stylesheet" href="../css/login.css">
-	<script type="text/javascript" src="../js/estados.js"></script>
 	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="../js/municipios.js"></script>
 
@@ -25,19 +24,15 @@
 
 <div class="container2" id="container2">
 	<div class="form-container sign-up-container">
-		<form action="../php/index.php">
+		<form action="../php/index.php" method="post">
 			<h1>Crie sua conta</h1>
 			<span></span>
-		    <input type="text" placeholder="Digite seu nome" required id="nome">
-			<input type="email" placeholder="Digite seu e-mail" required id="e-mail">
-			<input type="text" name="cpf" \
-			pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ id="cpf" placeholder="Digite seu cpf">
-			<!-- <input type="text" placeholder="Digite seu endereço" required id="endereco">
-			<input type="text" placeholder="Digite seu Bairro" required id="bairro">
-			<input type="number" placeholder="Digite seu numero" required id="numero">
-			<input type="text" placeholder="Digite seu complemento" required id="complemento">
-			<input type="text" placeholder="Digite seu " required id=""> -->
-			<select id="estado" onchange="buscaCidades(this.value)">
+			<input type="hidden" name="acao" value="cadastrar">
+		    <input type="text" placeholder="Digite seu nome" required id="nome" name="nome">
+			<input type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ id="cpf" placeholder="Digite seu cpf">
+			<input type="email" placeholder="Digite seu e-mail" required id="e-mail" name="email">
+			<input type="text" name="telefone" id="telefone" required id="telefone" placeholder="Digite seu telefone">
+			<select id="estado" onchange="buscarCidades(this.value)" name="estado">
 				<option value="">Selecione o Estado</option>
 				<option value="AC">Acre</option>	
 				<option value="AL">Alagoas</option>
@@ -68,9 +63,14 @@
 			 </select>
 			 <br/>
 			 <select name ='cidade'id="cidade">
+				<option value="ma">massapê</option>
 			 </select>
+			 <input type="text" placeholder="Digite seu Bairro" required id="bairro" name="Bairro">
+			 <input type="text" placeholder="Digite seu CEP" required id="cep" name="cep">
+			 <input type="number" placeholder="Digite o Número da sua casa" required id="numero_cs" name="numero" >
+			 <input type="text" placeholder="Digite um Complemento" required id="complemento" name="complemento">
 			
-			<input type="password" placeholder="Crie uma senha" />
+			<input type="password" placeholder="Crie uma senha" name="senha">
 			<button type="submit">Cadastrar</button>
 		</form>
 	</div>

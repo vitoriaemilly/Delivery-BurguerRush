@@ -1,20 +1,34 @@
 <?php
-  // Conectando o banco de dados ao php
-  $servername = 'localhost';
-  $username   ='root';
-  $password   = '';
-  $database   ='restaurante';
+  require_once "conection.php";
 
-  //Fazendo a conexão e ajustando o chasert para a comunicação
-  $conection = mysqli_connect($servername, $username, $password, $database);
-  mysqli_connect($conection, "utf-8");
+      $nome = $_POST['nome'];
+      $cpf = $_POST['cpf'];
+      $email = $_POST['email'];
+      $telefone = $_POST['telefone'];
+      $estado = $_POST['estado'];
+      $cidade = $_POST['cidade'];
+      $bairro = $_POST['bairro'];
+      $cep = $_POST['cep'];
+      $numero = $_POST['numero'];
+      $complemento = $_POST['complemento'];
+      $senha = $_POST['senha'];
 
-  //Agora verificar a conexão com o banco de dados
-  if(!$conection) {
-    die ('Falha na conexão'. mysqli_connect_error());
-  }
+      $sql = "INSERT INTO usuario (nome, CPF) VALUES ('{$nome}', '{$cpf}')"; 
+      $sql2 = "INSERT INTO endereco (estado, cidade, bairro, numero_casa, complemento, cep) VALUES ('{$estado}', '{$cidade}','{$bairro}','{$numero}', '{$complemento}', '{$cep}')";
+      $sql3 = "INSERT INTO dados_login (nome, CPF) VALUES ('{$email}', '{$telefone}', '{$senha}')"; 
 
-  // echo ('Conexão realizada.');
+      
+    
+  // $nome = $_POST['nome'];
+  // $cpf = $_POST['cpf'];
+  // $email = $_POST['email'];
+  // $telefone = $_POST['telefone'];
+  // $estado = $_POST['estado'];
+  // $cidade = $_POST['cidade'];
+  // $bairro = $_POST['bairro'];
+  // $cep = $_POST['cep'];
+  // $numero = $_POST['numero'];
+  // $complemento = $_POST['complemento'];
 
 
 ?>
