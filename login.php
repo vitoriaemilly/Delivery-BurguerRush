@@ -32,7 +32,7 @@
 		    <input type="text" placeholder="Digite seu nome" required id="nome" name="nome">
 			<input type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ id="cpf" placeholder="Digite seu cpf" maxlength="14">
 			<input type="email" placeholder="Digite seu e-mail" required id="e-mail" name="email">
-			<input type="text" name="telefone" id="telefone" required placeholder="Digite seu telefone" maxlength="">
+			<input type="text" name="telefone" id="telefone" required placeholder="Digite seu telefone" minlength="14" maxlength="14" \ pattern="(\d{2}\)\d{5}\-\d{4}" \>
 			<label for="estado">Estado:</label>
   			<select name="" id="estado" onchange="carregarCidades()">
   			  <option value="">Selecione um estado</option>
@@ -42,11 +42,11 @@
   				<option value="">Selecione um estado primeiro</option>
   			</select>
 			 <input type="text" placeholder="Digite seu Bairro" required id="bairro" name="bairro">
-			 <input type="text" placeholder="Digite seu CEP" required id="cep" name="cep">
+			 <input type="text" placeholder="Digite seu CEP" required id="cep" name="cep" \ pattern="\d{6}\-\d{3}" \ maxlength="11">
 			 <input type="number" placeholder="Digite o Número da sua casa" required id="numero_cs" name="numero" >
 			 <input type="text" placeholder="Digite um Complemento" required id="complemento" name="complemento">
 			
-			<input type="password" placeholder="Crie uma senha" name="senha">
+			<input type="password" placeholder="Crie uma senha" name="senha"maxlength="20" minlength="8">
 			<button type="submit" name="cadUsuario">Cadastrar</button>
 		</form>
 	</div>
