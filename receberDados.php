@@ -4,7 +4,7 @@
 
   $nome = $_POST['nome'];
   $cpf = $_POST['cpf'];
-  $estado = $_POST['estado'];
+  $estado = $_POST['#estado'];
   $cidade = $_POST['cidade'];
   $bairro = $_POST['bairro'];
   $numero = $_POST['numero'];
