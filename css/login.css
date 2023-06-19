@@ -80,6 +80,12 @@ form {
 	text-align: center;
 }
 
+label{
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
 input {
 	border-radius: 15px;
 	background-color: #eee;
@@ -171,10 +177,10 @@ select {
 }
 
 .overlayform {
-	background-color:  #e5621c;
+	background:url("../acess/hamburguer-de-carne-gostoso-de-vista-frontal-em-fundo-escuro-lanche-prato-sanduiche-de-fast-food-torrada-hamburguer-jantar.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
-	background-position: 0 0;
+	background-position: 0;
 	color: #FFFFFF;
 	position: relative;
 	left: -100%;

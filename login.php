@@ -39,7 +39,7 @@
   			</select>
   			<label for="cidade">Cidade:</label>
   			<select id="cidade">
-  			  <option value="">Selecione um estado primeiro</option>
+  			 Estado: <option value="">Selecione um estado primeiro</option>
   			</select>
 			 <input type="text" placeholder="Digite seu Bairro" required id="bairro" name="Bairro">
 			 <input type="text" placeholder="Digite seu CEP" required id="cep" name="cep">
