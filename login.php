@@ -34,7 +34,7 @@
 			<input type="email" placeholder="Digite seu e-mail" required id="e-mail" name="email">
 			<input type="text" name="telefone" id="telefone" required placeholder="Digite seu telefone" minlength="14" maxlength="14" \ pattern="(\d{2}\)\d{5}\-\d{4}" \>
 			<label for="estado">Estado:</label>
-  			<select name="" id="estado" onchange="carregarCidades()">
+  			<select name="estado" id="estado" onchange="carregarCidades()">
   			  <option value="">Selecione um estado</option>
   			</select>
   			<label for="cidade">Cidade:</label>
