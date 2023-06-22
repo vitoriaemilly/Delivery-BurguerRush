@@ -30,9 +30,9 @@
 			<span></span>
 			<input type="hidden" name="acao" value="cadastrar">
 		    <input type="text" placeholder="Digite seu nome" required id="nome" name="nome">
-			<input type="text" name="cpf" \ pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \ id="cpf" placeholder="Digite seu cpf" maxlength="14">
-			<input type="email" placeholder="Digite seu e-mail" required id="e-mail" name="email">
-			<input type="text" name="telefone" id="telefone" required placeholder="Digite seu telefone" minlength="14" maxlength="14" \ pattern="(\d{2}\)\d{5}\-\d{4}" \>
+			<input type="text" name="cpf" id="cpf" placeholder="Digite seu cpf" maxlength="11" oninput="mascaraCPF(this.value)">
+			<input type ="email" placeholder="Digite seu e-mail" required id="e-mail" name="email">
+			<input type="text" name="telefone" id="telefone" required placeholder="Digite seu telefone" minlength="11" maxlength="11" oninput="mascaraTelefone(this.value)">
 			<label for="estado">Estado:</label>
   			<select name="estado" id="estado" onchange="carregarCidades()">
   			  <option value="">Selecione um estado</option>
@@ -42,7 +42,7 @@
   				<option value="">Selecione um estado primeiro</option>
   			</select>
 			 <input type="text" placeholder="Digite seu Bairro" required id="bairro" name="bairro">
-			 <input type="text" placeholder="Digite seu CEP" required id="cep" name="cep" \ pattern="\d{6}\-\d{3}" \ maxlength="11">
+			 <input type="text" placeholder="Digite seu CEP" required id="cep" name="cep" maxlength="8"  oninput="mascaraCEP(this.value)">
 			 <input type="number" placeholder="Digite o Número da sua casa" required id="numero_cs" name="numero" >
 			 <input type="text" placeholder="Digite um Complemento" required id="complemento" name="complemento">
 			
@@ -52,13 +52,13 @@
 	</div>
 
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="fazerLogin.php" method="POST">
 			<h1>Entrar </h1>
 			<span>Use sua conta</span>
-			<input type="email" placeholder="Insira seu e-mail" />
-			<input type="password" placeholder="Digite sua senha" />
+			<input type="email" placeholder="Insira seu e-mail"  name="email"/>
+			<input type="password" placeholder="Digite sua senha" name="password"/>
 			<a href="#">Esqueceu a senha?</a>
-			<button>Entrar</button>
+			<button type="submit">Entrar</button>
 		</form>
 	</div>
 	<div class="overlay-container">
@@ -93,6 +93,36 @@
 		container.classList.remove("right-panel-active");
 	});
 
+	//Mascarar CPF
+	function mascaraCPF(cpf) {
+            // Remove qualquer caractere que não seja um dígito
+            cpf = cpf.replace(/\D/g, '');
+
+            // Aplica a máscara
+            cpf = cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4");
+
+            // Atualiza o valor do campo
+            document.getElementById('cpf').value = cpf;
+    }
+
+	function mascaraTelefone(telefone) {
+		telefone = String(telefone).replace(/\D/g,'')
+		if (telefone.length === 11){
+			telefone = telefone.replace(/(\d{2})(\d{5})(\d{4})/, "($1) $2-$3");
+		}	
+		// Atualiza o valor do campo
+		document.getElementById('telefone').value = telefone;
+	}
+
+	function mascaraCEP(cep){
+		cep = cep.replace(/\D/g, '');
+		
+		if (cep.length === 8) {
+                cep = cep.replace(/(\d{5})(\d{3})/, "$1-$2");
+            }
+
+        document.getElementById('cep').value = cep;
+	}
 
 </script>
 </body>
