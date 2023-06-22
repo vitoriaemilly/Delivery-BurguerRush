@@ -4,8 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/alterarDados.css">
 </head>
 <body>
+  <header class="container">
+			<details>
+				<summary></summary>
+				<nav class="menu">
+				  <a href="index.php">Home</a>
+				  <a href="#sobre">Sobre</a>
+				  <a href="login.php">Login</a>
+				  <a href="#link"> Carrinho</a>
+				</nav>
+			  </details>
+  </header>    
     <div class="container2" id="container2">
 	<div class="form-container sign-up-container">
 		<form action="updateDados.php" method="POST">

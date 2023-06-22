@@ -22,6 +22,7 @@
 				  <a href="#link"> Carrinho</a>
 				</nav>
 			  </details>
+		</header>
 
 <div class="container2" id="container2">
 	<div class="form-container sign-up-container">
@@ -81,7 +82,7 @@
 <footer>
 	<div class="container-footer">
 		<div class="container-contato">
-			<h2>Contatoss</h2>
+			<h2>Contatos</h2>
 		</div>
 	</div>
 

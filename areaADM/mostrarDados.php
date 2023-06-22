@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mostrarDados.css">
     <title>Lista de Clientes</title>
 </head>
 <body>
     <header class="container">
 			<details>
-				<!-- <label>User</label> -->
 				<summary></summary>
 				<nav class="menu">
 				  <a href="index.php">Home</a>
@@ -17,22 +17,6 @@
 				  <a href="#link"> Carrinho</a>
 				</nav>
 			  </details>
-				<!-- <<div class="logo">
-					 <img src="../acess/" alt="Logo burguer rush">
-				</div>>-->
-			
-			<!-- <aside>
-				<div class="menu-toogle">
-					<img src="../acess/menu-hamburguer.png" alt="menu-hamburguer">
-				</div>
-			</aside> -->
-
-			<!-- Criação de uma div video para fundo em loop da pagina inicial-->
-			<!-- </div>
-				<video class="video" autoplay loop>
-					<source src="video/MM002735____BBQ_164____1080p____A054_C119_0327DJ_001.mp4">
-				</video>
-			</div> -->
 	</header>
     
     <section>
