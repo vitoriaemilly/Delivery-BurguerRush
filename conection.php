@@ -1,5 +1,8 @@
 <?php
     // Conectando com o servidor do xampp, LEMBRANDO QUE NÃO É OBRIGADO SEGUIR OS MESMO NOMES DAS VARIAVEIS, MAS TEM UM PADRÃO EM ESPECIFICO!
+
+    session_start();
+
     $servername = 'localhost';
     $username = 'root';
     $password = '';
