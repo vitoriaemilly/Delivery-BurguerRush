@@ -79,6 +79,12 @@
 </div>
 
 <footer>
+	<div class="container-footer">
+		<div class="container-contato">
+			<h2>Contatoss</h2>
+		</div>
+	</div>
+
 </footer>
 <script>
     const signUpButton = document.getElementById('signUp');
