@@ -17,8 +17,8 @@
 				  <a href="#link"> Carrinho</a>
 				</nav>
 			  </details>
-  </header>    
-    <div class="container2" id="container2">
+  </header> 
+  <div class="container2" id="container2">
 	<div class="form-container sign-up-container">
 		<form action="updateDados.php" method="POST">
 			<h1>Altere Seus dados</h1>
@@ -42,9 +42,41 @@
 			 <input type="text" placeholder="Digite um Complemento" required id="complemento" name="complemento">
 			
 			<input type="password" placeholder="Crie uma senha" name="senha"maxlength="20" minlength="8">
-			<button type="submit" name="cadUsuario">ALterar</button>
+			<button type="submit" name="cadUsuario">Alterar</button>
 		</form>
 	</div>
+
+      
+<footer>
+	<div class="container-footer">
+		<div class="container-contato">
+			<h2>Contatos</h2>
+			<div class="">
+				<div class="whatsapp">
+					<img src="../img/logo-whatsApp.png" alt="">
+					<a href="https://wa.me/+5585984024263" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+				</div>
+				<div class="telefone">
+					<img src="../img/logo-telefone.png" alt="" class="imagens-contato">
+					<a href="#" target="_blank" rel="noopener noreferrer">85984024263</a>
+				</div>
+				<div class="email">
+					<img src="../img/logo-email.png" alt="" class="imagens-contato">
+					<a href="#" target="_blank" rel="noopener noreferrer">contato@burguerRush.com.br</a>
+				</div>
+			</div>
+			<div class="container-sociais">
+				<div>
+					<h2>Redes Sociais</h2>
+					<div class="redes-sociais">
+						<a href="#" target="_blank" rel="noopener noreferrer"><img src="../img/logo-instagram.png" alt="instagram"></a>
+						<a href="#" target="_blank"><img src="../img/logo-tiktok.png" alt="tiktok" ></a>
+						<a href="#" target="_blank" rel="noopener noreferrer"><img src="../img/logo-facebook.png" alt="facebook"></a>
+					</div>
+				</div>
+			</div>
+	</div>
+    </footer>
 
     <script>
          // Função para buscar os estados do Brasil através da API do IBGE

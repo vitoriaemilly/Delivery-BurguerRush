@@ -7,22 +7,21 @@
     <title>Lista de Clientes</title>
 </head>
 <body>
-    <header class="container">
+<header class="container">
 			<details>
 				<summary></summary>
 				<nav class="menu">
 				  <a href="index.php">Home</a>
-				  <a href="sobre">Sobre</a>
+				  <a href="#sobre">Sobre</a>
 				  <a href="login.php">Login</a>
 				  <a href="#link"> Carrinho</a>
 				</nav>
 			  </details>
-	</header>
-    
+  </header> 
     <section>
         <div class="container">
-            <div class="Container-listas">
-                <p>Econtre um usuario ou altere algum dado</p> <!-- Listagem dos clientes cadastrados no banco de dados -->
+            <div class="container-listas">
+                <p>Encontre um usuario ou altere algum dado</p> <!-- Listagem dos clientes cadastrados no banco de dados -->
             </div>
             <div class="form-pesquisa">
                 <form action="pesquisarUsuario.php" method="post">
@@ -58,7 +57,38 @@
             </div>
         </div>
     </section>
-    
+         
+<footer>
+	<div class="container-footer">
+		<div class="container-contato">
+			<h2>Contatos</h2>
+			<div class="">
+				<div class="whatsapp">
+					<img src="../img/logo-whatsApp.png" alt="">
+					<a href="https://wa.me/+5585984024263" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+				</div>
+				<div class="telefone">
+					<img src="../img/logo-telefone.png" alt="" class="imagens-contato">
+					<a href="#" target="_blank" rel="noopener noreferrer">85984024263</a>
+				</div>
+				<div class="email">
+					<img src="../img/logo-email.png" alt="" class="imagens-contato">
+					<a href="#" target="_blank" rel="noopener noreferrer">contato@burguerRush.com.br</a>
+				</div>
+			</div>
+			<div class="container-sociais">
+				<div>
+					<h2>Redes Sociais</h2>
+					<div class="redes-sociais">
+						<a href="#" target="_blank" rel="noopener noreferrer"><img src="../img/logo-instagram.png" alt="instagram"></a>
+						<a href="#" target="_blank"><img src="../img/logo-tiktok.png" alt="tiktok" ></a>
+						<a href="#" target="_blank" rel="noopener noreferrer"><img src="../img/logo-facebook.png" alt="facebook"></a>
+					</div>
+				</div>
+			</div>
+	</div>
+    </footer>
+
 </body>
 
 </html>
