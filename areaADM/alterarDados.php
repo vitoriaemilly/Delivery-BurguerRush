@@ -11,9 +11,9 @@
 			<details>
 				<summary></summary>
 				<nav class="menu">
-				  <a href="index.php">Home</a>
+				  <a href="../index.php">Home</a>
 				  <a href="#sobre">Sobre</a>
-				  <a href="login.php">Login</a>
+				  <a href="../login.php">Login</a>
 				  <a href="#link"> Carrinho</a>
 				</nav>
 			  </details>
