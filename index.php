@@ -19,12 +19,9 @@
 				<summary></summary>
 				<nav class="menu">
 				  <a href="index.php">Home</a>
-				  <a href="sobre">Sobre</a>
 				  <a href="login.php">Login</a>
-				  <a href="#link"> Carrinho</a>
 				</nav>
 			  </details>
-
 			<!-- Criação de uma div video para fundo em loop da pagina inicial-->
 			</div>
 				<video class="video" autoplay loop>
@@ -42,86 +39,238 @@
 </div>
 </div>
 
-<!-- Criação de section do texto do cardápio-->
+<!-- Criação de section do texto do cardápio principal-->
 <section class="pedidostext" id="pedidostext">
-	<h1> Nosso cardápio</h1>
-	<p> Confira nossas delícias </p>
+	<h3> Nosso cardápio</h3>
 </section>
 
-<!-- <Criação de uma classe principal para o enu dos pedidos> -->
-	<div class="menu-pedidos">
-		<ul>
-		<li onclick="mostrar('hamburguer')">Hámburguers</li>
-		<li onclick="mostrar('bebida')"> Bebidas</li>
-		<li onclick="mostrar('combo')"> Combos</li>
-    </ul>
-</div>
+    <br> <br>
+    <!-- criação de classe para os cards principais -->
 
-<!-- Criação div de itens para chamar o id com a função criada de acordo com o li -->
-<div id="itens"> 
-
-	<!-- id hamburguer para alocar todos os cards de hamburguer  -->
-	<div id="hamburguer" class="itensclass"> 
-		
-	</div>
-
-
-	<div id="bebida" class="itensclass"> 
-	<div class="containercomida">
-        <div class="card" style="--cor:yellow;">
-            <div class="imgcomida">
-                <img src="cardapio/sucoabacaxi.jpg">
+        <div class="containercomida">
+            <div class="card" style="--cor:brown;">
+                <div class="imgcomida">
+                    <img src="cardapio/hambuguer-duas-carnes-e-queijo.jpg">
+                </div>
+            <div class="conteudocomida">
+                <h2> Duo </h2>
+                <p> O nosso hambúrguer Duo é composto de carne dupla
+                    juntamente com queijo, cebola e alface. Além de contar com a
+                     receita tradicional da casa.
+                     <br> R$ 13,00
+                </p>
+                     <a href="#"> Comprar</a>
             </div>
+        </div>
+
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/hambuguer-xbuguer.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2> X- tudo </h2>
+                <p> O nosso X-buguer é inteiramente completo, trazendo variedades, queijo duplo, tomate e alface. Além de contar com a
+                     receita tradicional da casa.
+                    <br> R$ 16,00</p>
+                    <a href="#"> Comprar</a>
+            </div>
+        </div>
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/hambuguer-gourmet.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2> Gourmet</h2>
+                <p> O nosso hambúguer gourmet trás uma receita de carne artesanal, 
+                    e molhos específicos à moda da casa, juntamente com queijo cheedar 
+                <br> R$ 11,00</p>
+                    <a href="#"> Comprar</a>
+            </div>
+        </div>
+    </div><br><br><br><br>
+
+    <div class="containercomida">
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/hambuguervegano.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2> Vegano</h2>
+              
+                <p> O nosso hambúrguer é 100% vegano e feito com cogumelo em sua composição principal   <br> R$ 12,00 </p>
+                <a href="#"> Comprar</a>
+            </div>
+        </div>
+
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/hambuguerbacon.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2> Bacon</h2>
+                <p> O nosso hambúguer de bacon dá água na boca, e é composto de molho de quato queijos <br> R$10,00</p>
+                    <a href="#"> Comprar</a>
+            </div>
+        </div>
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/hambuguertradicional.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2> Tradicional</h2>
+                <p>O nosso hambúrguer tradicional é um dos mais queridinhos para aqueles amantes do hambuguer básico, porém delicioso! <br> R$ 13,00</p>
+                    <a href="#"> Comprar</a>
+            </div>
+        </div>
+
+
+
+       <!--  Card para as bebidas -->
+
+        <div class="containercomida">
+            <div class="card" style="--cor:brown;">
+                <div class="imgcomida">
+                    <img src="cardapio/sucoabacaxi.jpg">
+                </div>
             <div class="conteudocomida">
                 <h2> Suco de abacaxi</h2>
                 <p> O nosso suco natural de abacaxi é a melhor opção
-					 para quem buscar se refrescar ou servir com o acompanhamento
-					  à um de nossos hamburgueres ou combos
-				</p>
+					 para se refrescar ou servir com o acompanhamento
+					  à um de nossos hamburgueres ou combos <BR> R$ 5,00</p>
                      <a href="#"> Comprar</a>
             </div>
         </div>
-		<div class="containercomida">
-        <div class="card" style="--cor:red;">
-            <div class="imgcomida">
-                <img src="cardapio/sucomorango.jpg">
-            </div>
-            <div class="conteudocomida">
-                <h2> Suco de morango</h2>
-                <p> O nosso suco natural de morango é a melhor opção
-					 para quem buscar se refrescar ou servir com o acompanhamento
-					  à um de nossos hamburgueres ou combos</p>
-                     <a href="#"> Comprar</a>
-            </div>
-        </div>
-		<div class="containercomida">
-        <div class="card" style="--cor:orange;">
+
+        <div class="card" style="--cor:brown;">
             <div class="imgcomida">
                 <img src="cardapio/sucolaranja.jpg">
             </div>
             <div class="conteudocomida">
                 <h2> Suco de laranja</h2>
                 <p> O nosso suco natural de laranja é a melhor opção
-					 para quem buscar se refrescar ou servir com o acompanhamento
-					  à um de nossos hamburgueres ou combos</p>
-                     <a href="#"> Comprar</a>
-            </div><!--  <!- div do conteudo-!> -->
+					 para se refrescar ou servir com o acompanhamento
+					  à um de nossos hamburgueres ou combos
+                      <BR> R$ 5,00</p>
+                    <a href="#"> Comprar</a>
+            </div>
         </div>
-		
-
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/sucomorango.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2> Suco de morango</h2>
+                <p> O nosso suco natural de morango é a melhor opção
+					 para se refrescar ou servir com o acompanhamento
+					  à um de nossos hamburgueres ou combos <BR> R$ 6,00</p>
+                    <a href="#"> Comprar</a>
+            </div>
         </div>
-        </div>
-			
-        </div>
-
-    <div id="combo" class="itensclass">
-		
     </div>
-	
-</body>
-</div>
 
-<div class="rodape">
-	<p> teste </p>
-	 </div>
+    <div class="containercomida">
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/refrigerante.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2> Refrigerante</h2>
+                <p> O nosso refrigerante é a melhor opção para 
+					se refrescar ou servir com o acompanhamento à um de nossos hambúrgues ou combos
+                    <BR> R$ 5,00</p>
+                     <a href="#"> Comprar</a>
+            </div>
+        </div>
+
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/sucolimão.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2> Suco de limão</h2>
+                <p>O nosso suco natural de limão é a melhor opção
+					 para  se refrescar ou servir com o acompanhamento
+					  à um de nossos hamburgueres ou combos <BR> R$ 5,00</p>
+                    <a href="#"> Comprar</a>
+            </div>
+        </div>
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/sucodemaracuja.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2> Suco de maracujá</h2>
+                <p> O nosso suco natural de maracujá é a melhor opção
+					 para  se refrescar ou servir com o acompanhamento
+					  à um de nossos hamburgueres ou combos <BR> R$ 5,00</p>
+                    <a href="#"> Comprar</a>
+            </div>
+        </div>
+
+        <div class="containercomida">
+            <div class="card" style="--cor:brown;">
+                <div class="imgcomida">
+                    <img src="cardapio/combo-adulto.jpg">
+                </div>
+            <div class="conteudocomida">
+                <h2> Combo especial</h2>
+                <p> Esse combo foi feito para você! Um hambúrguer de bacon, junto com uma porção de batata e refrigerante<BR> R$ 22,00</p>
+                     <a href="#"> Comprar</a>
+            </div>
+        </div>
+
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/combo-infantil.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2> Combo kids</h2>
+                <p> Combo com um pequeno hambúrguer de peito de peru, e refrigerante acompanhado <br> R$ 15,00</p>
+                    <a href="#"> Comprar</a>
+            </div>
+        </div>
+        <div class="card" style="--cor:brown;">
+            <div class="imgcomida">
+                <img src="cardapio/combovegano.jpg">
+            </div>
+            <div class="conteudocomida">
+                <h2>Combo vegano</h2>
+                <p> O nosso combo especial há dois hambúrgueres veganos, uma mini porção de batata e refrigerante! <br> R$ 25,00 </p>
+                    <a href="#"> Comprar</a>
+            </div>
+        </div>
+    </div><br><br><br><br>
+    </div>
+    
+<footer>
+	<div class="container-footer">
+		<div class="container-contato">
+			<h2>Contatos</h2>
+			<div class="">
+				<div class="whatsapp">
+					<img src="img/logo-whatsApp.png" alt="">
+					<a href="https://wa.me/+5585984024263" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+				</div>
+				<div class="telefone">
+					<img src="img/logo-telefone.png" alt="" class="imagens-contato">
+					<a href="#" target="_blank" rel="noopener noreferrer">85984024263</a>
+				</div>
+				<div class="email">
+					<img src="img/logo-email.png" alt="" class="imagens-contato">
+					<a href="#" target="_blank" rel="noopener noreferrer">contato@burguerRush.com.br</a>
+				</div>
+			</div>
+			<div class="container-sociais">
+				<div>
+					<h2>Redes Sociais</h2>
+					<div class="redes-sociais">
+						<a href="#" target="_blank" rel="noopener noreferrer"><img src="img/logo-instagram.png" alt="instagram"></a>
+						<a href="#" target="_blank"><img src="img/logo-tiktok.png" alt="tiktok" ></a>
+						<a href="#" target="_blank" rel="noopener noreferrer"><img src="img/logo-facebook.png" alt="facebook"></a>
+					</div>
+				</div>
+			</div>
+	</div>
+    </footer>
+    </body>
 </html>
