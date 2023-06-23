@@ -24,7 +24,7 @@
                 <p>Encontre um usuario ou altere algum dado</p> <!-- Listagem dos clientes cadastrados no banco de dados -->
             </div>
             <div class="form-pesquisa">
-                <form action="pesquisarUsuario.php" method="post">
+                <form action="pesquisarUsuario.php" method="post" class="procurar">
                     <fieldset>
                         <legend>Procure por um Usuário</legend>
                         <label for="email">Pesquise através do E-mail:</label>
